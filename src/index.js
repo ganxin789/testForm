@@ -8,9 +8,10 @@ import 'antd/dist/antd.css'
 // import LinkTwo from './pages/linkColorButton';
 // import Comein from './pages/xingneng/xingneng';
 // import PageA from './pages/redux/showPage';
-import WrapFun from './pages/form';
+
 import Form1 from './pages/form';
 import WrapT from './pages/form/testform';
-
-ReactDOM.render(<WrapFun />, document.getElementById('root'));
+import './pages/form/style.less'
+import WrapFun from './pages/form';
+ReactDOM.render(<WrapFun/>, document.getElementById('root'));
 

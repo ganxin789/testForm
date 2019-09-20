@@ -1,26 +1,20 @@
 import React from 'react';
 import { Button, Input, Icon, Form, Checkbox } from 'antd'
-
-
 function Form1(props) {
     const getFieldDecorator = props.form.getFieldDecorator;
     const form = props.form
     // console.log(getFieldDecorator)
     function handleSubmit(e) {
-        e.preventDefault();
-        
+        e.preventDefault();        
         form.validateFields((err,values)=>{
             if (err) {
                alert('err:')
             }else{
                 console.log('values:',values)
             }
-        })
-        
-        
+        })               
     }
     function mydo(rules, value, callback) {
-
         if (value.length < 5) {
             callback('no less than 5')
         } else {
